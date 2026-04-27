@@ -1,160 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mairesse Nkundizanye | Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Projects | Mairesse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">Mairesse Nkundizanye</h1>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="navbar">
+  <h1 class="logo">Mairesse</h1>
 
-  <!-- Projects Container -->
-  <main class="projects-container">
-    <h2>Projects</h2>
-    <p class="intro">
-      This page highlights academic and practical projects that demonstrate my
-      skills in systems administration, data analysis, automation, and technical documentation.
-    </p>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-    <!-- Project Card -->
-    <section class="project-card">
-      <h3>REDCap Data Integration and Visualization in Power BI</h3>
-      <p class="project-meta">UNT Health Science Center</p>
-      <ul>
-        <li>Collaborated with UNT HSC staff to extract research data from REDCap for reporting and visualization.</li>
-        <li>Developed Power Query (M) code to send secure POST API requests to the REDCap API.</li>
-        <li>Configured automated refresh workflows in Power BI to enable continuous data updates.</li>
-        <li>Improved accessibility and usability of research data through interactive dashboards.</li>
-      </ul>
-    </section>
+<main class="projects-container">
 
-    <!-- Project Card -->
-    <section class="project-card">
-      <h3>Active Directory Domain Services (AD DS) Lab in Microsoft Azure</h3>
-      <p class="project-meta">
-        <a href="https://github.com/mairesse24/Windows-Server-AD-Setup" target="_blank">
-          View on GitHub
-        </a>
-      </p>
-      <ul>
-        <li>Built a domain-based network using Azure virtual machines (Windows Server 2022 and Windows 10).</li>
-        <li>Installed and configured Active Directory Domain Services and promoted the server to a Domain Controller.</li>
-        <li>Created Organizational Units (OUs), user accounts, and role-based permissions.</li>
-        <li>Automated account creation and system configuration using PowerShell.</li>
-      </ul>
-    </section>
+<h2>Projects</h2>
 
-    <!-- Project Card -->
-    <section class="project-card">
-      <h3>Configuring NTFS Permissions for DayGroup and NightGroup</h3>
-      <p class="project-meta">
-        <a href="https://github.com/mairesse24/practical-final" target="_blank">
-          View on GitHub
-        </a>
-      </p>
-      <ul>
-        <li>Configured NTFS permissions for separate user groups on secured folders.</li>
-        <li>Disabled permission inheritance and converted permissions to explicit ACLs.</li>
-        <li>Applied the principle of least privilege by removing default access groups.</li>
-        <li>Strengthened folder-level security and access control.</li>
-      </ul>
-    </section>
+<!-- JWKS -->
+<section class="project-card">
+  <h3>JWKS Server (FastAPI + Flask + SQLite)</h3>
+  <p>
+    Built a secure JSON Web Key Set (JWKS) authentication system supporting JWT issuance,
+    key rotation, and both in-memory and database-backed key storage.
+  </p>
 
-    <!-- Project Card -->
-    <section class="project-card">
-      <h3>Student Grade Analytics System (Microsoft Access & VBA)</h3>
-      <p class="project-meta">Database Course Project</p>
-      <ul>
-        <li>Designed a relational database by importing and normalizing CSV data.</li>
-        <li>Created SQL queries and automated GPA calculations using VBA.</li>
-        <li>Developed interactive forms and dashboards to visualize student performance.</li>
-        <li>Demonstrated data integration, automation, and foundational analytics concepts.</li>
-      </ul>
-    </section>
+  <ul>
+    <li>REST API for JWKS public key distribution</li>
+    <li>JWT generation with valid and expired keys</li>
+    <li>SQLite-backed secure key persistence</li>
+    <li>~96% test coverage using Pytest</li>
+  </ul>
 
-  </main>
+  <a href="https://github.com/mairesse24/JWKS-Server" target="_blank">
+    View on GitHub
+  </a>
+</section>
+
+<!-- TECH COMM -->
+<section class="project-card">
+  <h3>Job & Internship Scam Prevention Research</h3>
+  <p>
+    Conducted mixed-method research analyzing job scam exposure among university students
+    using surveys, interviews, and technical literature.
+  </p>
+
+  <ul>
+    <li>Designed and distributed student survey (Qualtrics)</li>
+    <li>Analyzed scam exposure patterns and risks</li>
+    <li>Proposed institutional prevention strategies</li>
+  </ul>
+</section>
+
+<!-- AD DS -->
+<section class="project-card">
+  <h3>Active Directory Domain Services Lab (Azure)</h3>
+  <p>
+    Built a domain network in Microsoft Azure using Windows Server 2022 and Windows 10
+    virtual machines to simulate enterprise identity management.
+  </p>
+
+  <ul>
+    <li>Configured Active Directory Domain Services (AD DS)</li>
+    <li>Promoted server to Domain Controller</li>
+    <li>Created Organizational Units and managed user permissions</li>
+    <li>Automated administrative tasks using PowerShell</li>
+  </ul>
+</section>
+
+<!-- DATABASE -->
+<section class="project-card">
+  <h3>Student Grade Analytics System</h3>
+  <p>
+    Developed a database system using Microsoft Access to automate GPA calculations
+    and visualize student performance metrics.
+  </p>
+
+  <ul>
+    <li>Imported and normalized CSV datasets</li>
+    <li>Built SQL queries and VBA automation scripts</li>
+    <li>Created interactive dashboards and forms</li>
+  </ul>
+</section>
+
+</main>
 
 </body>
-
-<!-- CSS -->
-<style>
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
-  }
-
-  a {
-    color: #22d3ee;
-    text-decoration: none;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #020617;
-  }
-
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-
-  .projects-container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 30px;
-  }
-
-  h2 {
-    color: #c53994;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-  }
-
-  .intro {
-    margin-bottom: 40px;
-    line-height: 1.6;
-    color: #cbd5f5;
-  }
-
-  .project-card {
-    background-color: #020617;
-    padding: 25px 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    border: 1px solid #1e293b;
-    transition: transform 0.3s ease;
-  }
-
-  .project-card:hover {
-    transform: translateY(-5px);
-  }
-
-  .project-card h3 {
-    color: #22d3ee;
-    margin-bottom: 5px;
-  }
-
-  .project-meta {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #9ca3af;
-  }
-
-  ul {
-    padding-left:
+</html>
