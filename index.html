@@ -1,186 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name | ePortfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Mairesse Nkundizanye | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="eportfolio/styles.css">
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">Mairesse Nkundizanye</h1>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="eportfolio/resume.html">Resume</a></li>
-      <li><a href="eportfolio/projects.html">Projects</a></li>
-      <li><a href="eportfolio/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- NAV -->
+<nav class="navbar">
+  <h1 class="logo">Mairesse</h1>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="eportfolio/resume.html">Resume</a></li>
+    <li><a href="eportfolio/projects.html">Projects</a></li>
+    <li><a href="eportfolio/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-content">
+
+    <!-- IMAGE -->
     <div class="image-frame">
       <img src="eportfolio/portrait.jpg" alt="portrait">
     </div>
 
-    <div class="about-text">
-      <h2>About Me</h2>
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h1>Building Technology That Expands Opportunity</h1>
+
       <p>
-        An enthusiastic computer science student passionate about blending culture
-        and diversity with innovative technology. From building websites and writing
-        code to securing user accounts and troubleshooting hardware, I enjoy learning
-        new tools and systems inspired by my personal experiences. Driven by curiosity
-        and a strong desire to grow, I am always looking for ways to improve and expand
-        my skills.
+        Computer Science student focused on backend development,
+        building secure systems and applications that create access
+        and solve real-world problems.
       </p>
+
+      <a href="eportfolio/resume.html" class="btn">View Resume</a>
     </div>
-  </section>
 
-  <!-- Culture Tiles Section -->
-  <section class="culture-section">
-    <h2>What Inspires My Work</h2>
+  </div>
 
-    <div class="tiles">
-      <div class="tile">Culture & Identity</div>
-      <div class="tile">Technology</div>
-      <div class="tile">Problem Solving</div>
-      <div class="tile">Continuous Learning</div>
-    </div>
-  </section>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Mairesse Nkundizanye</p>
-  </footer>
+<!-- STORY -->
+<section class="story">
+  <h2>My Journey</h2>
+
+  <p>
+    I grew up in Cameroon with limited access to technology,
+    but a strong curiosity about how systems work. That curiosity
+    led me to explore computers through books and eventually
+    pursue software engineering.
+  </p>
+
+  <p>
+    Along the way, I’ve faced challenges that built resilience and discipline.
+    Today, I’m driven by the belief that technology should not just exist —
+    it should create opportunity, especially for underserved communities.
+  </p>
+</section>
+
+<!-- CULTURE -->
+<section class="culture-section">
+  <h2>What Shapes My Work</h2>
+
+  <div class="tiles">
+    <div class="tile">Culture & Identity</div>
+    <div class="tile">Resilience</div>
+    <div class="tile">Problem Solving</div>
+    <div class="tile">Community Impact</div>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section class="summary">
+  <h3>Summary</h3>
+
+  <p>
+    Computer Science student focused on backend development, secure systems,
+    and data-driven problem solving. Passionate about building applications
+    that expand access to opportunities and improve real-world systems.
+  </p>
+
+  <p><b>Interests:</b> Backend Development, APIs, System Design, Security</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Mairesse Nkundizanye</p>
+</footer>
 
 </body>
 
-<!-- CSS-->
-<style>
-
- /* Global Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f172a; /* match resume background */
-  color: #e5e7eb; /* light text */
-}
-
-a {
-  color: #22d3ee; /* bright teal links */
-  text-decoration: none;
-}
-
-/* Navigation */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #020617; /* dark navy, matches resume */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
-
-.logo {
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 40px;
-  gap: 40px;
-}
-
-/* Image Frame */
-.image-frame {
-  width: 220px;
-  height: 220px;
-  padding: 8px;
-  background: linear-gradient(135deg, #facc15, #ec4899, #22d3ee);
-  border-radius: 20px;
-}
-
-.image-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
-  background-color: #ffffff;
-}
-
-/* About Text */
-.about-text {
-  max-width: 500px;
-}
-
-.about-text h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #c53994; /* gold heading */
-}
-
-.about-text p {
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Culture Section - keep as-is */
-.culture-section {
-  padding: 60px 40px;
-  text-align: center;
-  background-color: #020617; /* keep dark background */
-}
-
-.culture-section h2 {
-  margin-bottom: 30px;
-  font-size: 1.8rem;
-  color: #c53994; /* keep pink heading */
-}
-
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.tile {
-  background-color: #e46060; /* soft gray tiles */
-  padding: 30px;
-  border-radius: 16px;
-  font-weight: 600;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: default;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.tile:hover {
-  transform: scale(1.05);
-  background-color: #097377;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  background-color: #020617; /* dark footer like resume navbar */
-  color: #9ca3af; /* gray text */
-}
-
-</style>
 </html>
