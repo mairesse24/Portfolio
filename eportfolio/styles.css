@@ -1,0 +1,242 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #020617;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 60px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* IMAGE BIGGER */
+.image-frame {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  background: linear-gradient(135deg, #facc15, #ec4899, #22d3ee);
+  border-radius: 20px;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* HERO TEXT */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  color: #facc15;
+  font-size: 2.5rem;
+}
+
+/* =========================
+   STORY
+========================= */
+
+.story {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.story h2 {
+  color: #ec4899;
+}
+
+/* =========================
+   CULTURE
+========================= */
+
+.culture-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #020617;
+}
+
+.tiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tile {
+  background: #1e293b;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+/* =========================
+   SUMMARY CENTER FIX
+========================= */
+
+.summary {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 30px;
+  text-align: center; /* THIS is the key fix */
+}
+
+.summary h3 {
+  color: #facc15;
+  margin-bottom: 15px;
+}
+
+.summary p {
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* =========================
+   GLOBAL H2 FIX (IMPORTANT)
+========================= */
+
+/* DEFAULT PAGE HEADINGS */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #facc15;   /* yellow (fixes white issue) */
+}
+
+/* =========================
+   RESUME
+========================= */
+
+.resume-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.resume-container h3 {
+  color: #22d3ee;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 6px;
+  margin-top: 35px;
+}
+
+.header-info {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #cbd5f5;
+}
+
+.item {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.project-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #22d3ee;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container {
+  max-width: 650px;
+  margin: 70px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact-container h2 {
+  color: #ec4899; /* keep pink */
+}
+
+.contact-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+}
